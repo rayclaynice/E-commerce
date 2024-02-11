@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+
+
+{% block content %}
+<style>
+    body {
+        background-color: lightgray;
+    }
+    #reg_form{
+    border-radius:20px;
+    width:500px;
+    }
+    #sub_btn{
+        background-color: lightgray;
+        border-radius: 10px;
+    }
+    .email_p{
+        font-weight: bold;
+    }
+
+
+
+</style>
+
+
+<body>
+
+
+    <div id="reg_form" class ="container bg-white shadow-md p-5 form-layout"> 
+        <div class ="text-center">
+            <i class="fa fa-check fa-3x text-success" aria-hidden="true"></i>
+        <br><br>
+
+        <h5><strong> Your account is active! </strong></h5>
+        <hr>
+
+        <p> Please proceed to log in. </p>
+        <br>
+        <a href="{% url 'register' %}" class="btn btn-primary">Log in</a>
+        </div>
+
+        </div>
+</body>
+{% endblock %}
+

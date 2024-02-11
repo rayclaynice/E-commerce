@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+
+
+{% block content %}
+<style>
+    body {
+        background-color: lightgray;
+    }
+    #reg_form{
+    border-radius:20px;
+    width:500px;
+    }
+    #sub_btn{
+        background-color: lightgray;
+        border-radius: 10px;
+    }
+    .email_p{
+        font-weight: bold;
+    }
+
+
+
+</style>
+
+
+<body>
+
+
+    <div id="reg_form" class ="container bg-white shadow-md p-5 form-layout"> 
+        <div class ="text-center">
+            <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+        <br><br>
+
+        <h5><strong>  A verification link was sent to your email.</strong></h5>
+        <hr>
+        <br>
+
+        <p class = 'email_p'> please check your email. </p>
+        </div>
+
+        </div>
+</body>
+{% endblock %}
+

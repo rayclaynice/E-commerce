@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+
+
+{% block content %}
+<style>
+    body {
+        background-color: lightgray;
+    }
+    #reg_form{
+    border-radius:20px;
+    width:500px;
+    }
+    #sub_btn{
+        background-color: lightgray;
+        border-radius: 10px;
+    }
+    .email_p{
+        font-weight: bold;
+    }
+
+
+
+</style>
+
+
+<body>
+
+
+    <div id="reg_form" class ="container bg-white shadow-md p-5 form-layout"> 
+        <div class ="text-center">
+            <i class="fa fa-times fa-3x text-danger" aria-hidden="true"></i>
+        <br><br>
+
+        <h5><strong>  Email email-verification failed! </strong></h5>
+        <hr>
+
+        <p> Please contact admin support</p>
+        <br>
+        <a href="{% url 'register' %}" class="btn btn-primary">Register</a>
+        </div>
+
+        </div>
+</body>
+{% endblock %}
+
+
+
+
+
