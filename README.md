@@ -1,4 +1,4 @@
-Certainly! Here's a template for a Django E-commerce README.md file that you can use on GitHub:
+
 
 ---
 
